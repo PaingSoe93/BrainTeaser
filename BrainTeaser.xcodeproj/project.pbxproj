@@ -8,20 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		4E5039901CDB1462005C0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50398F1CDB1462005C0D87 /* AppDelegate.swift */; };
-		4E5039921CDB1462005C0D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5039911CDB1462005C0D87 /* ViewController.swift */; };
+		4E5039921CDB1462005C0D87 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5039911CDB1462005C0D87 /* LoginVC.swift */; };
 		4E5039951CDB1462005C0D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5039931CDB1462005C0D87 /* Main.storyboard */; };
 		4E5039971CDB1462005C0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5039961CDB1462005C0D87 /* Assets.xcassets */; };
 		4E50399A1CDB1462005C0D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5039981CDB1462005C0D87 /* LaunchScreen.storyboard */; };
+		4EE85CEF1CDDA4A800F23618 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE85CEE1CDDA4A800F23618 /* CustomTextField.swift */; };
+		4EE85CF11CDDAB8800F23618 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE85CF01CDDAB8800F23618 /* CustomButton.swift */; };
+		4EE85CF41CDEEF0600F23618 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE85CF31CDEEF0600F23618 /* AnimationEngine.swift */; };
+		4EE85CF61CDEFF0100F23618 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE85CF51CDEFF0100F23618 /* CardVC.swift */; };
+		4EE85CF81CDF00B400F23618 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE85CF71CDF00B400F23618 /* Card.swift */; };
+		4EE85CFA1CDF00F200F23618 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE85CF91CDF00F200F23618 /* Card.xib */; };
+		698FA1AEA85E0D9CF323726E /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB866FD3A6522D25D90C23C /* Pods_BrainTeaser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E50398C1CDB1462005C0D87 /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E50398F1CDB1462005C0D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E5039911CDB1462005C0D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E5039911CDB1462005C0D87 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4E5039941CDB1462005C0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E5039961CDB1462005C0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5039991CDB1462005C0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E50399B1CDB1462005C0D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5039A11CDB29A9005C0D87 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
+		4EE85CEE1CDDA4A800F23618 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4EE85CF01CDDAB8800F23618 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4EE85CF31CDEEF0600F23618 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		4EE85CF51CDEFF0100F23618 /* CardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		4EE85CF71CDF00B400F23618 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4EE85CF91CDF00F200F23618 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		9D941E6AF65C52F2ACC23D85 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
+		CEF5E374FF003BAC9C34672E /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
+		FDB866FD3A6522D25D90C23C /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698FA1AEA85E0D9CF323726E /* Pods_BrainTeaser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0697684BAC40117DE2B9BC5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5E374FF003BAC9C34672E /* Pods-BrainTeaser.debug.xcconfig */,
+				9D941E6AF65C52F2ACC23D85 /* Pods-BrainTeaser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4E5039831CDB1462005C0D87 = {
 			isa = PBXGroup;
 			children = (
 				4E50398E1CDB1462005C0D87 /* BrainTeaser */,
 				4E50398D1CDB1462005C0D87 /* Products */,
+				0697684BAC40117DE2B9BC5B /* Pods */,
+				86DF321CDC0FB97757C3F7BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +83,53 @@
 		4E50398E1CDB1462005C0D87 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				4EE85CF21CDEEEEB00F23618 /* Util */,
+				4EE85CED1CDDA48300F23618 /* Controller */,
+				4EE85CEC1CDDA47900F23618 /* View */,
 				4E50398F1CDB1462005C0D87 /* AppDelegate.swift */,
-				4E5039911CDB1462005C0D87 /* ViewController.swift */,
 				4E5039931CDB1462005C0D87 /* Main.storyboard */,
 				4E5039961CDB1462005C0D87 /* Assets.xcassets */,
 				4E5039981CDB1462005C0D87 /* LaunchScreen.storyboard */,
 				4E50399B1CDB1462005C0D87 /* Info.plist */,
+				4E5039A11CDB29A9005C0D87 /* BrainTeaser-Bridging-Header.h */,
 			);
 			path = BrainTeaser;
+			sourceTree = "<group>";
+		};
+		4EE85CEC1CDDA47900F23618 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EE85CEE1CDDA4A800F23618 /* CustomTextField.swift */,
+				4EE85CF01CDDAB8800F23618 /* CustomButton.swift */,
+				4EE85CF71CDF00B400F23618 /* Card.swift */,
+				4EE85CF91CDF00F200F23618 /* Card.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4EE85CED1CDDA48300F23618 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E5039911CDB1462005C0D87 /* LoginVC.swift */,
+				4EE85CF51CDEFF0100F23618 /* CardVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4EE85CF21CDEEEEB00F23618 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4EE85CF31CDEEF0600F23618 /* AnimationEngine.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		86DF321CDC0FB97757C3F7BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDB866FD3A6522D25D90C23C /* Pods_BrainTeaser.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E50399E1CDB1462005C0D87 /* Build configuration list for PBXNativeTarget "BrainTeaser" */;
 			buildPhases = (
+				FAD5776D52F1BEF94CC15CDD /* Check Pods Manifest.lock */,
 				4E5039881CDB1462005C0D87 /* Sources */,
 				4E5039891CDB1462005C0D87 /* Frameworks */,
 				4E50398A1CDB1462005C0D87 /* Resources */,
+				E2D555EC1ACFB22FA0B39F51 /* Embed Pods Frameworks */,
+				2AA31437D4D6202374B6CAB2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +167,7 @@
 				TargetAttributes = {
 					4E50398B1CDB1462005C0D87 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VF2LSRC33P;
 					};
 				};
 			};
@@ -125,18 +197,72 @@
 				4E50399A1CDB1462005C0D87 /* LaunchScreen.storyboard in Resources */,
 				4E5039971CDB1462005C0D87 /* Assets.xcassets in Resources */,
 				4E5039951CDB1462005C0D87 /* Main.storyboard in Resources */,
+				4EE85CFA1CDF00F200F23618 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AA31437D4D6202374B6CAB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D555EC1ACFB22FA0B39F51 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD5776D52F1BEF94CC15CDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E5039881CDB1462005C0D87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5039921CDB1462005C0D87 /* ViewController.swift in Sources */,
+				4EE85CF61CDEFF0100F23618 /* CardVC.swift in Sources */,
+				4EE85CF11CDDAB8800F23618 /* CustomButton.swift in Sources */,
+				4EE85CF81CDF00B400F23618 /* Card.swift in Sources */,
+				4E5039921CDB1462005C0D87 /* LoginVC.swift in Sources */,
 				4E5039901CDB1462005C0D87 /* AppDelegate.swift in Sources */,
+				4EE85CF41CDEEF0600F23618 /* AnimationEngine.swift in Sources */,
+				4EE85CEF1CDDA4A800F23618 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,23 +375,36 @@
 		};
 		4E50399F1CDB1462005C0D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF5E374FF003BAC9C34672E /* Pods-BrainTeaser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BrainTeaser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmpitech.BrainTeaser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrainTeaser/BrainTeaser-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4E5039A01CDB1462005C0D87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D941E6AF65C52F2ACC23D85 /* Pods-BrainTeaser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BrainTeaser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmpitech.BrainTeaser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrainTeaser/BrainTeaser-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +427,7 @@
 				4E5039A01CDB1462005C0D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

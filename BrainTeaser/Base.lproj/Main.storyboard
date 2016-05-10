@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="BrainTeaser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,179 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="TVc-mf-FQV">
+                                <rect key="frame" x="175" y="28" width="250" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="e33-61-QBF"/>
+                                    <constraint firstAttribute="width" constant="250" id="x4h-ts-ykB"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2E-lm-PtY" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="175" y="282" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1vv-Kl-9cc"/>
+                                    <constraint firstAttribute="height" constant="40" id="AvE-Hw-4zz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPV-3N-86g" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="175" y="347" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="1ff-xc-mSG"/>
+                                    <constraint firstAttribute="height" constant="40" id="9AM-Oh-FXH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GFv-Cq-Ii1"/>
+                                    <constraint firstAttribute="width" constant="250" id="dz6-i0-l5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y63-cZ-gcV" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="246" y="422" width="109" height="40"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.5725490196078431" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pqI-Li-55E"/>
+                                    <constraint firstAttribute="width" constant="109" id="rIs-u6-h5S"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="lVM-An-s7L" kind="show" id="5ky-4n-mdu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y63-cZ-gcV" firstAttribute="top" secondItem="OPV-3N-86g" secondAttribute="bottom" constant="35" id="7r2-xe-6zQ"/>
+                            <constraint firstItem="N2E-lm-PtY" firstAttribute="top" secondItem="TVc-mf-FQV" secondAttribute="bottom" constant="35" id="9bI-RY-0gM"/>
+                            <constraint firstItem="N2E-lm-PtY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HT4-sc-CQJ"/>
+                            <constraint firstItem="OPV-3N-86g" firstAttribute="top" secondItem="N2E-lm-PtY" secondAttribute="bottom" constant="25" id="M6O-eH-Pvx"/>
+                            <constraint firstItem="TVc-mf-FQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKi-st-K9Y"/>
+                            <constraint firstItem="y63-cZ-gcV" firstAttribute="centerX" secondItem="OPV-3N-86g" secondAttribute="centerX" id="T0C-Zz-Ado"/>
+                            <constraint firstItem="TVc-mf-FQV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ajJ-0A-Yng"/>
+                            <constraint firstItem="OPV-3N-86g" firstAttribute="centerX" secondItem="N2E-lm-PtY" secondAttribute="centerX" id="uMK-23-FJI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstrain" destination="HT4-sc-CQJ" id="90E-Tk-OUw"/>
+                        <outlet property="loginButtonConstraint" destination="T0C-Zz-Ado" id="CAS-z6-dhD"/>
+                        <outlet property="passwordConstraint" destination="uMK-23-FJI" id="lYW-78-ld4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="210" y="352"/>
+        </scene>
+        <!--CardVC-->
+        <scene sceneID="ttf-8T-VD1">
+            <objects>
+                <viewController id="lVM-An-s7L" customClass="CardVC" customModule="BrainTeaser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DB7-2u-qwN"/>
+                        <viewControllerLayoutGuide type="bottom" id="UnW-Pa-4uo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxF-sI-6bv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-78-ate" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="204" y="508" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2zk-CE-ded"/>
+                                    <constraint firstAttribute="height" constant="40" id="go2-Wb-hi3"/>
+                                    <constraint firstAttribute="width" constant="109" id="skF-bU-qHm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="START"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="skF-bU-qHm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="yesPressed:" destination="lVM-An-s7L" eventType="touchUpInside" id="mLn-th-rp9"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-SK-ccv" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="16" y="508" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Tb6-iN-B5N"/>
+                                    <constraint firstAttribute="height" constant="40" id="q7r-o3-9Zm"/>
+                                    <constraint firstAttribute="width" constant="100" id="sCd-YW-s2V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="NO"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Tb6-iN-B5N"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="noPressed:" destination="lVM-An-s7L" eventType="touchUpInside" id="yU2-Tk-85g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember This Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVl-rd-ukb">
+                                <rect key="frame" x="16" y="100" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="09P-2l-ACd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rqY-78-ate" firstAttribute="trailing" secondItem="fxF-sI-6bv" secondAttribute="trailingMargin" id="CCw-xd-1VT"/>
+                            <constraint firstItem="iVl-rd-ukb" firstAttribute="top" secondItem="DB7-2u-qwN" secondAttribute="bottom" constant="80" id="Kfr-cc-ZO6"/>
+                            <constraint firstItem="UnW-Pa-4uo" firstAttribute="top" secondItem="zOh-SK-ccv" secondAttribute="bottom" constant="20" id="Yiy-J7-rpc"/>
+                            <constraint firstItem="UnW-Pa-4uo" firstAttribute="top" secondItem="rqY-78-ate" secondAttribute="bottom" constant="20" id="cJU-2y-2R2"/>
+                            <constraint firstItem="zOh-SK-ccv" firstAttribute="leading" secondItem="fxF-sI-6bv" secondAttribute="leadingMargin" id="jA6-V0-bmE"/>
+                            <constraint firstItem="iVl-rd-ukb" firstAttribute="centerX" secondItem="fxF-sI-6bv" secondAttribute="centerX" id="rVo-q8-OYX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="noBtn" destination="zOh-SK-ccv" id="UaU-Sg-X4y"/>
+                        <outlet property="titlelbl" destination="iVl-rd-ukb" id="4n3-Jf-L3i"/>
+                        <outlet property="yesBtn" destination="rqY-78-ate" id="gff-qk-vk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIE-yH-5Aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="brain" width="573" height="573"/>
+    </resources>
 </document>
